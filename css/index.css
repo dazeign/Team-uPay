@@ -1,10 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,400;1,200&family=Source+Code+Pro:ital,wght@0,300;1,900&display=swap');
 *{
     margin: 0;
     padding: 0;
 }
-/* *{
-    border: 0.5px solid red;
-} */
 a{
     text-decoration: none;
 }
@@ -32,7 +30,8 @@ nav{
     position: relative;
     width: 40%;
     margin-left: 25%;
-    font-family: 'Nunito Sans';
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 100;
     font-size: 16px;
     display: flex;
     text-align: center;
@@ -47,6 +46,11 @@ nav>ul{
 nav>ul>a{
     color: #2B2B2B;
 }
+
+nav>ul>a:hover{
+    color: #0B8457;
+    font-weight: 400;
+}
 .signInButton{
     position: relative;
     background: #0B8457;
@@ -58,9 +62,15 @@ nav>ul>a{
     text-align: center;
     margin-top: -25px;
 }
+.signInButton>a:hover{
+    color: #EAC100;
+}
+.signUpButton>a:hover{
+    color: #EAC100;
+}
 .signInButton>a{
     color: #E5E5E5;
-    font-family: 'Source Code Pro';
+    font-family: 'Source Code Pro', monospace;;
     font-size: 16px;
 }
 main::before{
@@ -77,24 +87,24 @@ section{
     margin: 2% 5% 0 5%;
 }
 section>p{
-    font-family: 'Nunito Sans';
-    font-style: italic;
+    font-family: 'Nunito Sans', sans-serif;
     font-weight: 200;
-    font-size: 20px;
+    font-size: 30px;
     line-height: 33px;
     display: inline-flex;
     flex-direction: row;
     justify-content: space-between;
     margin-right: 2%;
-    letter-spacing: -0.05em;
     color: #000000;
+    margin-top: 20px;
 }
 section>h1{
-    font-family: 'Source Sans Pro';
+    font-family: 'Source Code Pro', monospace;
     margin-top: 50px;
-    font-weight: 600;
+    font-weight: 900;
+    font-style: italic;
     font-size: 200px;
-    line-height: 251px;
+    line-height: 200px;
     width: 50%;
     display: flex;
     align-items: center;
@@ -121,6 +131,9 @@ aside>p{
     align-items: center;
     letter-spacing: -0.05em;
     color: #000000;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 100;
+    font-style: italic;
 }
 aside>p:nth-child(1){
     text-align: left;
@@ -137,6 +150,7 @@ aside>p:nth-child(2){
     margin-top: -50px;
 }
 .signUpButton>a{
+    font-family: 'Source Code Pro', monospace;
     line-height: 40px;
     letter-spacing: -0.05em;
     color: #DEE1EC;
@@ -144,19 +158,21 @@ aside>p:nth-child(2){
 .weBelieve{
     position: relative;
     float: right;
-    font-size: 18px;
+    font-size: 20px;
     margin-right: 5%;
-    margin-top: -50px;
+    margin-top: -100px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 100;
 }
 .weBelieve>span{
     display: block;
     font-family: 'Source Sans Pro';
     font-style: normal;
-    font-weight: 300;
-    font-size: 64px;
-    line-height: 91px;
+    font-weight: 200;
+    font-size: 62px;
     display: flex;
     align-items: center;
     color: #0B8457;
-
+    font-family: 'Nunito Sans', sans-serif;
+    font
 }
