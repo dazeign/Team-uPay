@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,400;1,200&family=Source+Code+Pro:ital,wght@0,300;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,400;1,200;1,400&family=Source+Code+Pro:ital,wght@0,300;1,900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -87,10 +87,12 @@ section{
     margin: 2% 5% 0 5%;
 }
 section>p{
+    position: relative;
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 200;
     font-size: 30px;
     line-height: 33px;
+    font-style: italic;
     display: inline-flex;
     flex-direction: row;
     justify-content: space-between;
@@ -103,6 +105,7 @@ section>h1{
     margin-top: 50px;
     font-weight: 900;
     font-style: italic;
+    position: relative;
     font-size: 200px;
     line-height: 200px;
     width: 50%;
@@ -162,6 +165,7 @@ aside>p:nth-child(2){
     margin-right: 5%;
     margin-top: -100px;
     font-family: 'Nunito Sans', sans-serif;
+    font-style: italic;
     font-weight: 100;
 }
 .weBelieve>span{
@@ -174,5 +178,94 @@ aside>p:nth-child(2){
     align-items: center;
     color: #0B8457;
     font-family: 'Nunito Sans', sans-serif;
-    font
+}
+@media (min-width: 481px) and (max-width: 967px) {
+    /* *{
+        border: 0.5px solid red;
+    } */
+    header{
+        padding-top: 1%;
+    }
+    img{
+        width: 10%;
+    }
+    nav{
+        width: 50%;
+        margin-left: 20%;
+    }
+    nav>ul{
+        margin-top: 4%;
+        width: 30%;
+    }
+    .signInButton{
+        border-radius: 5px;
+        width: 120px;
+        float: right;
+        line-height: 32px;
+        margin-top: -30px;
+    }
+    section{
+        margin: 2% 5% 0 5%;
+    }
+    section>p{
+        position: relative;
+        font-size: 26px;
+    }
+    section>h1{
+        margin-top: 45px;
+        font-style: italic;
+        font-size: 180px;
+        line-height: 180px;
+        width: 100%;
+        position: relative;
+    }
+    svg{
+        display: block;
+        margin-top: 0px;
+        float: right;
+        width: 65%;
+    }
+    aside{
+        margin: 5% 5% 5% 5%;
+        width: 33%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    aside>p{
+        margin-top: 5%;
+        width: 49%;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .signUpButton{
+        float: left;
+        margin-left: 5%;
+        width: 180px;
+        text-align: center;
+        margin-top: 0px;
+    }
+    .signUpButton>a{
+        font-family: 'Source Code Pro', monospace;
+        line-height: 36px;
+        letter-spacing: -0.05em;
+        color: #DEE1EC;
+    }
+    .weBelieve{
+        float: right;
+        width: 90%;
+        font-size: 20px;
+        margin-right: 5%;
+        margin-top: -30px;
+    }
+    .weBelieve>span{
+        display: inline;
+        font-weight: 200;
+        font-size: 52px;
+        margin-left: 2.5%;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+        
 }
